@@ -224,7 +224,7 @@ ul {
 }
 
 .sidebar-item + .sidebar-item {
-  margin-top: 58px;
+  margin-top: 59px;
 }
 
 .sidebar-title {
@@ -234,7 +234,7 @@ ul {
 .sidebar-item-title {
   position: relative;
   
-  margin-bottom: 42px;
+  margin-bottom: 38px;
   
   text-align: center;
   
@@ -279,6 +279,10 @@ ul {
   /*line-height: 18px;*/
   
   color: #000000;
+}
+
+.sidebar-item + .sidebar-item_search {
+  margin-top: 63px;
 }
 
 .search {
@@ -334,6 +338,14 @@ ul {
   background-repeat: no-repeat;
 }
 
+.sidebar-item + .sidebar-item_subscription {
+  margin-top: 56px;
+}
+
+.sidebar-item-title_subscription {
+  margin-bottom: 35px;
+}
+
 .field-subscribe, .btn-subscribe {
   width: 100%;
 }
@@ -348,6 +360,10 @@ ul {
   text-align: center;
 }
 
+.sidebar-item + .sidebar-item_tags {
+  margin-top: 54px;
+}
+
 .tag-list {
   margin-bottom: -6px;
 }
@@ -356,12 +372,13 @@ ul {
   margin-bottom: 6px;
 }
 
+/*чисто в образовательных целях*/
 .tag-list-item, .sidebar-tag {
   display: inline-block;
 }
 
 .sidebar-tag {
-  padding: 6px 10px 6px 11px;
+  padding: 6px 13px 6px 11px;
   
   font-size: 12px;
   line-height: 1;
@@ -369,10 +386,14 @@ ul {
   border: 3px solid #eeeeee;
 }
 
+.sidebar-item-title_categories {
+  margin-bottom: 22px;
+}
+
 .category-list-item { 
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 14px;
  
   font-size: 14px;
   font-weight: 700;
