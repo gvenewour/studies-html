@@ -26,14 +26,6 @@ body {
   font-weight: 400;
 }
 
-a {
-  color: inherit;
-}
-
-ul {
-  list-style-type: none;
-}
-
 .header {
   position: relative;
   
@@ -68,14 +60,17 @@ ul {
   margin-left: auto;
 }
 
-.header-nav-wrap {
+.content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.header__content_nav {
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   display: block;
 
   /*avocode: 179px, ps: 183px*/
@@ -83,16 +78,24 @@ ul {
   height: 42px;
 }
 
-.header-menu-list {
+.list {
+  list-style-type: none;
+}
+
+.menu__list {
   display: flex;
  /*не нужно использовать flex-wrap, тогда пункты меню спокойно переносятся даже при напихивании в них текста    */
 }
 
-.header-menu-list-item:nth-of-type(n+2) {
+.menu__item:nth-of-type(n+2) {
   margin-left: 37px;
 }
 
-.header-menu-link {      
+.link {
+  color: inherit;
+}
+
+.menu__link {
   font-size: 13px;
   line-height: 2.76;
   text-transform: uppercase;
@@ -100,21 +103,19 @@ ul {
   color: #ffffff;
 }
 
-.header-title-wrap {
-  width: 735px;
-  padding-top: calc(125px - 21px);
-   /*из-за свойства line-height у заголовка .header-title сверху и снизу появляется небольшое расстояние, поэтому необходима коррекция отступов*/
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
 .title {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.header-title {
+.header__title {
+  width: 735px;
+  padding-top: calc(125px - 21px);
+  /*из-за свойства line-height у заголовка .header-title сверху и снизу появляется небольшое расстояние, поэтому необходима коррекция отступов*/
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
   font-size: 45px;
   line-height: 1.66;
   
@@ -133,8 +134,6 @@ ul {
 }
 
 .main-content, .article, .sidebar-article {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
