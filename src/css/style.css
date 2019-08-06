@@ -133,41 +133,45 @@ body {
   background-color: #ffffff;
 }
 
-.main-content, .article, .sidebar-article {
+.content_top {
   align-items: flex-start;
 }
 
-.articles-wrap {
+.main__articles {
   flex: 0 0 66%;
 }
 
-.article + .article {
+.main__article + .main__article {
   margin-top: 60px;
 }
 
-.article-thumbnail-wrap {
+.article__thumbnail-wrap {
   flex: 0 0 49.5%;
 
   height: 295px;
 }
 
-.article-thumbnail {
+.article__thumbnail {
   max-height: 100%;
   max-width: 100%;
 }
 
-.article-main {
+.article__text {
   flex: 0 0 47%;
 }
 
-.article-tag-list {
+.article__header {
+  padding-bottom: 46px;
+}
+
+.article__tag-list {
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-.article-tag {
+.article__tag {
   margin-right: 18px;
   
   font-size: 14px;
@@ -175,8 +179,8 @@ body {
   color: #b59f5b;
 }
 
-.article-title {
-  margin-bottom: 29px;
+.article__title {
+  margin-bottom: 27px;
   
   font-size: 20px;
   line-height: 1.2;
@@ -184,35 +188,32 @@ body {
   color: #0f0d0e;
 }
 
-.article-info-wrap {
+.article-info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   
-  margin-bottom: 45px;
-  
 /*   font-size: 12px; */
 }
 
-.article-info {
+.article-info__item {
   margin-right: 17px;
 }
 
-.article-date {
+.date {
   font-size: 12px;
-  /*используется в нескольких местах*/
 
   color: #888888;
 }
 
-.article-author {
+.author {
   font-size: 12px;
   font-weight: 700;
   
   color: #000000;
 }
 
-.article-excerpt {
+.article__excerpt {
   font-size: 15px;
   line-height: 1.47;
   
