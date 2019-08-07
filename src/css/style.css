@@ -89,7 +89,7 @@ body {
 
 .menu__list {
   display: flex;
- /*не нужно использовать flex-wrap, тогда пункты меню спокойно переносятся даже при напихивании в них текста    */
+  flex-wrap: wrap;
 }
 
 .menu__item:nth-of-type(n+2) {
