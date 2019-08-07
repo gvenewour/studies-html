@@ -171,12 +171,14 @@ body {
   margin-bottom: 6px;
 }
 
+.article__tag {
+  font-size: 14px;
+
+  color: #b59f5b;
+}
+
 .main__article .article__tag {
   margin-right: 18px;
-  
-  font-size: 14px;
-  
-  color: #b59f5b;
 }
 
 .main__article .article__title {
@@ -186,6 +188,7 @@ body {
   line-height: 1.2;
   
   color: #0f0d0e;
+  /* цвет и шрифт зависят от расположения статьи на странице */
 }
 
 .main__article .article-info {
@@ -410,7 +413,7 @@ body {
   color: #b59f5b;
 }
 
-.social-info__wrap {
+.social-info__content {
   padding-top: 31px;
   padding-bottom: 31px;
   
@@ -442,7 +445,7 @@ body {
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
 }
 
-.link-description {
+.description-hint {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -463,8 +466,6 @@ body {
 
 .social-link_tumblr {
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
-  
-/*  SAFE COLOR  */
 }
 
 .footer { 
